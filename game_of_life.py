@@ -134,5 +134,5 @@ if __name__=="__main__":
 
     size = int(sys.argv[1])
     frames = int(sys.argv[2])
-    h = GameOfLife(1600,900,cell_size=size,fps=frames)
+    h = GameOfLife(1200,800,cell_size=size,fps=frames)
     h.main_loop()
