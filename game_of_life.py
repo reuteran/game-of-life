@@ -99,7 +99,7 @@ class GameOfLife(grid.Grid):
         #find column:
         col = x/self.cell_size
         row = y/self.cell_size
-        self.cells[row][col].doDraw=True
+        self.cells[row][col].doDraw = not self.cells[row][col].doDraw
         
     def on_key_press(self,symbol,modifiers):
         if symbol == pyglet.window.key.SPACE:
