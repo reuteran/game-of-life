@@ -97,8 +97,8 @@ class GameOfLife(grid.Grid):
         if x < 0 or x > self.width or y < 0 or y > self.height:
             return
         #find column:
-        col = x/self.cell_size
-        row = y/self.cell_size
+        col = x // self.cell_size
+        row = y // self.cell_size
         self.cells[row][col].doDraw = not self.cells[row][col].doDraw
         
     def on_key_press(self,symbol,modifiers):
